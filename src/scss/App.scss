@@ -11,9 +11,12 @@
 }
 
 .input-field{
-  display: flex;
-  justify-content: center;
   margin: 40px 0;
+  
+  & form {
+    display: flex;
+    justify-content: center;
+  }
 
   & button {
     border-top-left-radius: 0;
