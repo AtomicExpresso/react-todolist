@@ -1,10 +1,11 @@
-import './sass/App.scss'
+import './scss/App.scss'
+import ToDoList from './componets/todolist'
 
 function App() {
 
   return (
     <>
-      <h1>test</h1>
+      <ToDoList/>
     </>
   )
 }

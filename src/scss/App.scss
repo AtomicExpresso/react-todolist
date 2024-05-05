@@ -3,40 +3,51 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #151a30;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container{
+  color: white;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.input-field{
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+
+  & button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0 20px;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  & input {
+    width: auto;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 300px;
   }
 }
 
-.card {
-  padding: 2em;
+.todo-item{
+  justify-content: center;
+  display: flex;
+  justify-content: space-between;
 }
 
-.read-the-docs {
-  color: #888;
+.todo-item-btn{
+  display: flex;
+  gap: 10px;
+
+  & button {
+    height: 40px;
+  }
+}
+
+.list-item-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 20px;
 }
